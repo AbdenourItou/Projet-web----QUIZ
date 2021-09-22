@@ -1,0 +1,106 @@
+
+/* style pour le body et html pour que l'image D'arriere plan  apprait sur toute la page entière*/ 
+
+body, 
+ html{
+min-height:100%; 
+} 
+body {
+background-image:url(../images/09.jpg);
+background-repeat:no-repeat;
+background-size:cover;
+}
+/* faire du style pour les grand titre en gris */ 
+
+h2{
+color:gray;
+}
+h3{
+color:blue;
+}
+
+
+
+ /* style sur le nabar */
+.navbar1 {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* lien dans le navbar*/ 
+.navbar1 a{
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* style pour le dropdown menu */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown boutton  */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0;  
+}
+
+/*Ajouter du hover bleu pour les liens du dropdown */
+.navbar1 a:hover, .dropdown:hover .dropbtn {
+  background-color: #0089ff;
+}
+
+/* contenu du dropdown masqué par défaut */
+.dropdown-contenu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* liens dans le dropdown */
+.dropdown-contenu a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* ajouter du hover bleu pour les lien du dropdwon */
+.dropdown-contenu a:hover {
+  background-color: #0089ff;
+}
+
+.dropdown:hover .dropdown-contenu {
+  display: block;
+} 
+
+
+/*le footer */ 
+footer{
+            clear: both;
+            display: flex;
+            justify-content: center;
+        }
+/* class de footer */ 
+.foot {
+            background-color:rgb(3, 95, 118);
+            color:black;
+            padding:14px;
+            border-radius: 20px;
+        }

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- lien externe vers la feuille de style du quiz -->
+  	<link rel="stylesheet" href="style/quiz.css">
+
+  <title>QUIZ </title>
+</head>
+
+<body>
+<!-- div pour centrer les questions et faire une background image avec -->
+<div class="centre" id="bg">
+  
+  <!--le form qui contient les questions --> 
+  <form name="form" id="questions" onsubmit="return false;">
+    <h2>1. La mémoire qui permet l’opération de lecture et d’écriture simultanées est ?</h2>
+    <input type="radio" name="q1" value="a" /><span> 1. RAM</span><br />
+    <input type="radio" name="q1" value="b" /><span> 2. ROM</span><br />
+    <input type="radio" name="q1" value="c" /><span> 3. EPROM</span><br />
+    <input type="radio" name="q1" value="d" /><span> 4. EEPROM</span><br />
+
+    <h2>2. Qui n’est pas considéré comme un périphérique de l’ordinateur?</h2>
+    <input type="radio" name="q2" value="a" /><span> 1. Disque</span><br />
+    <input type="radio" name="q2" value="b" /><span> 2. Clavier</span><br />
+    <input type="radio" name="q2" value="c" /><span> 3. Moniteur</span><br />
+    <input type="radio" name="q2" value="d" /><span> 4. CPU</span><br />
+
+
+    <h2>3. L’ALU utilise .........pour stocker les résultats intermédiaires.</h2>
+    <input type="radio" name="q3" value="a" /><span> 1. L’accumulateurs</span><br />
+    <input type="radio" name="q3" value="b" /><span> 2. Les registres</span><br />
+    <input type="radio" name="q3" value="c" /><span> 3. Le tas</span><br />
+    <input type="radio" name="q3" value="d" /><span> 4. La pile</span><br />
+
+
+    <h2>4. La mémoire vive c'est ....</h2>
+    <input type="radio" name="q4" value="a" /><span> 1. RAM</span><br />
+    <input type="radio" name="q4" value="b" /><span> 2. ROM </span><br />
+    <input type="radio" name="q4" value="c" /><span> 3. Compteur orindal</span><br />
+    <input type="radio" name="q4" value="d" /><span> 4. CPU </span><br />
+
+
+    <h2>5. La mémoire de l’ordinateur utilisée pour stocker les programmes et les données en cours d’exécution par le CPU est ....?</h2>
+    <input type="radio" name="q5" value="a" /><span> 1. ROM</span><br />
+    <input type="radio" name="q5" value="b" /><span> 2. CPU</span><br />
+    <input type="radio" name="q5" value="c" /><span> 3. ALU</span><br />
+    <input type="radio" name="q5" value="d" /><span> 4. RAM</span><br />
+
+
+    <h2>6. Le moniteur est un périfirique ...  </h2>
+    <input type="radio" name="q6" value="a" /><span> 1. Entrée </span><br />
+    <input type="radio" name="q6" value="b" /><span> 2. Entrée/Sortie </span><br />
+    <input type="radio" name="q6" value="c" /><span> 3. Sortie </span><br />
+    <input type="radio" name="q6" value="d" /><span> 4. Aucune </span><br />
+ 
+
+        <h2>7. parmis ces périfiriques qui est un périfirique d'entrée  ...  </h2>
+    <input type="radio" name="q7" value="a" /><span> 1. CPU </span><br />
+    <input type="radio" name="q7" value="b" /><span> 2. Clavier </span><br />
+    <input type="radio" name="q7" value="c" /><span> 3. Imprimante </span><br />
+    <input type="radio" name="q7" value="d" /><span> 4. Moniteur </span><br />
+      
+      
+          <h2>8. parmis ces périfiriques qui est un périfirique d'entrée /Sortie ...  </h2>
+    <input type="radio" name="q8" value="a" /><span> 1. Clavier </span><br />
+    <input type="radio" name="q8" value="b" /><span> 2. ALU </span><br />
+    <input type="radio" name="q8" value="c" /><span> 3. Moniteur </span><br />
+    <input type="radio" name="q8" value="d" /><span> 4. Aucune </span><br />
+      
+      
+          <h2>9. c'est un composant  qui contient l'adresse de la prochaine instruction à exécuter dans le programme ...  </h2>
+    <input type="radio" name="q9" value="a" /><span> 1. CPU </span><br />
+    <input type="radio" name="q9" value="b" /><span> 2. RAM </span><br />
+    <input type="radio" name="q9" value="c" /><span> 3. Compteur ordinal </span><br />
+    <input type="radio" name="q9" value="d" /><span> 4. Aucune </span><br />
+      
+      
+      
+          <h2>10. Ils permettent à l'unité de commande de transmettre des adresses des informations ...  </h2>
+    <input type="radio" name="q10" value="a" /><span> 1. Les bus d'adresse </span><br />
+    <input type="radio" name="q10" value="b" /><span> 2. Le bus de commande </span><br />
+    <input type="radio" name="q10" value="c" /><span> 3. Registres </span><br />
+    <input type="radio" name="q10" value="d" /><span> 4. Aucune </span><br />
+      
+
+<span>    </span><br />
+ <!-- centrer le boutton submit -->
+      
+ <div style="text-align:center;">
+
+      <input class="submit" type="submit" id="sendA" value="Submit" onclick="score();" />
+      
+</div>
+      
+</form>
+     <br/>
+   <div style="text-align:center;">  
+<button class="refaire" onclick="window.location.href='quiz.html'">Refaire   </button>
+   </div>   
+    <!-- centrer le boutton -->  
+    <div style="text-align:center;"> 
+<button onclick="window.location.href='formation.html'">Retour vers la formation   </button> 
+    </div>
+    <br/>
+    <!-- un Div pour afficher les résultats  --> 
+    <div id="resultat"></div>
+  
+</div>
+    
+   <script src="js/quiz.js"></script>  
+</body>
+
+    
+    
+    
+    
+</html>

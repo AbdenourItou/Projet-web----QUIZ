@@ -1,0 +1,49 @@
+
+/* Collorer les réponses justes en vert et les réponses fausses en rouge  */ 
+.vrai + span {
+  background-color: #add8ad;
+}
+
+.faux + span {
+  background-color: #fd6d6d;
+}
+
+
+
+/* style pour le body et html pour que l'image D'arriere plan  apprait sur toute la page entière*/ 
+body, 
+ html{
+min-height:100%; 
+} 
+body {
+background-image:url(../images/09.jpg);
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+/* centrer les div qui contient les questions  */ 
+.centre {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #20b0ea;
+  padding: 10px;
+}
+
+/* faire du style pour le boutton et submit */ 
+input[type=submit],button{
+  background-color: #006ecc;
+  border: 1px;
+  color: white;
+  padding: 20px 36px;
+  text-decoration: none;
+  margin: 6px 4px;
+  cursor: pointer;
+}
+
+button.refaire
+
+{
+background-color: red;
+    
+    
+}
